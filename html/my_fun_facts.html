@@ -5,23 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Website Title</title>
     <link rel="icon" type="image/x-icon" href="/assets/img/browser_5202957.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <center>
+    <header class="navbar">
+        <h2><img src="/assets/img/—Pngtree—brain bulb icon symbol design_5199221.png" alt="This is an image of logo"></h2>
         <nav>
-            <a href="/index.html">Home</a> |
-            <a href="my_resume.html">Resume</a> |
-            <a href="my_fun_facts.html">Fun Facts</a>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/html/my_resume.html">Resume</a></li> 
+                <li><a href="/html/my_fun_facts.html">Fun Facts</a></li>
+            </ul>
         </nav>
+        <button class="lets-btn">Lets Connect</button>
+    </header>
 
-        <header>
+    <main>
+        <section class="intro">
             <h1>Some fun facts about me</h1>
-        </header>
+        </section>
 
-        <section>
-            <article>
+        <section class="facts">
+            <article class="fact-item">
                 <h2>Favorite Book</h2>
-                <div>
+                <div class="fact-content">
                     <h3>Book Title</h3>
                     <p>"Pet Sematary" by Stephen King is a chilling tale of a family who discovers a burial ground with the power to bring the dead back to life. As they grapple with loss and temptation, they unearth horrors that blur the line between life and death, leading to a terrifying descent into darkness..</p>
                     <img src="/assets/img/book.jpg" alt="Pet Sematary Book Cover">
@@ -31,9 +39,9 @@
                 </div>
             </article>
 
-            <article>
+            <article class="fact-item">
                 <h2>Favorite Audio Track</h2>
-                <div>
+                <div class="fact-content">
                     <h3>"L'etranger" - Ryan Anderson</h3>
                     <p>"L'etranger" is a captivating and introspective track that invites listeners into a journey of self-discovery and reflection. With its poignant lyrics and haunting melody, the song explores themes of alienation, identity, and the search for belonging in a complex world. Ryan Anderson's soulful vocals and evocative instrumentation create an atmospheric landscape that resonates deeply with listeners, capturing the essence of longing and the quest for understanding.</p>
                     <audio controls>
@@ -46,9 +54,9 @@
                 </div>
             </article>
 
-            <article>
+            <article class="fact-item">
                 <h2>Favorite TV Series</h2>
-                <div>
+                <div class="fact-content">
                     <h3>One Piece</h3>
                     <video src="/assets/video/ONE PIECE _ Netflix Trailer _ Anime Version.mp4" width="400px" height="auto" controls>
                         Your browser does not support the embedded video file.
@@ -56,14 +64,28 @@
                 </div>
             </article>
         </section>
-    </center>
-    <hr>
-    <footer>
-            &copy; 2024 Manuels Portfolio. All rights reserved. <br>
-            Email: <a href="mailto:mgardea@oakland.edu">mgardea@oakland.edu</a> <br>
-            Social Media: Instagram: @manuellg
-    </footer>
+    </main>
 
+    <footer>
+        <div class="footer-content">
+            <div class="cols">
+                <div class="link-cols">
+                    <h4>Useful Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="./html/my_resume.html">Resume</a>
+                    <a href="./html/my_fun_facts.html">Fun Facts</a>
+                </div>
+                <div class="reach-out">
+                    <h4>Reach Out</h4>
+                    <ul>
+                        <li>Email: <a href="mailto:mgardea@oakland.edu">mgardea@oakland.edu</a></li>
+                        <li>Instagram: <a href="https://www.instagram.com/manuellg/">@manuellg</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
+
 

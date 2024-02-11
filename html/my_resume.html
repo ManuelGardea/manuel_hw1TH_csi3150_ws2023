@@ -5,30 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Website Title</title>
     <link rel="icon" type="image/x-icon" href="/assets/img/browser_5202957.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <center>
-        <nav>
-            <a href="/index.html">Home</a> |
-            <a href="my_resume.html">Resume</a> |
-            <a href="/html/my_fun_facts.html">Fun Facts</a>
-        </nav>
-
-        <header>
-            <h1>Manuel Gardea - Resume</h1>
-        </header>
-
-        <section>
+    <header>
+        <div class="navbar">
+            <h2><img src="/assets/img/—Pngtree—brain bulb icon symbol design_5199221.png" alt="This is an image of logo"></h2>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/html/my_resume.html">Resume</a></li> 
+                    <li><a href="/html/my_fun_facts.html">Fun Facts</a></li>
+                </ul>
+            </nav>
+            <button class="lets-btn">Lets Connect</button>
+        </div>
+    </header>
+    <div class="resume">
+        <h1>My Resume Page</h1>
+    </div>
+    <section>
+        <div class="contact-info">
             <h2>Contact Information</h2>
             <p>
                 Address: 123 Peggy Ln<br>
                 Email: <a href="mailto:mgardea@oakland.edu">mgardea@oakland.edu</a><br>
                 Telephone: +154112342
             </p>
+        </div>
 
+        <div class="objective">
             <h2>Objective</h2>
             <p>Seeking an internship for summer 2024 in the cybersecurity field.</p>
+        </div>
 
+        <div class="professional-experience">
             <h2>Professional Experience</h2>
             <article>
                 <h3>01/27/2022 - 02/22/2023, Java Developer, Microsoft, California United States</h3>
@@ -39,23 +51,52 @@
                     Stayed updated with emerging technologies and industry trends to drive innovation.
                     Effective communication and teamwork skills demonstrated in collaborative environments.</p>
             </article>
+        </div>
 
+        <div class="educational-experiences">
             <h2>Educational Experiences</h2>
-            <section>
-                <h3>09/7/2021 - 09/7/2025 Information Technology Degree</h3>
-                <p>Oakland University, Rochester Hills, Michigan</p>
-            </section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Start - End</th>
+                        <th>Degree</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09/7/2021 - 09/7/2025</td>
+                        <td>Bachelor of Science, Information Technology, Oakland University, Rochester Hills, Michigan</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
 
+        <div class="interests-hobbies">
             <h2>Extracurricular Interests and Hobbies</h2>
             <p>I enjoy building computers, pc games, and going to the gym</p>
-        </section>
-    </center>
-</br>
-<hr>
-        <footer>
-            &copy; 2024 Manuels Portfolio. All rights reserved. <br>
-            Email: <a href="mailto:mgardea@oakland.edu">mgardea@oakland.edu</a> <br>
-            Social Media: Instagram: @manuellg
-        </footer>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="cols">
+                <div class="link-cols">
+                    <h4>Useful Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="./html/my_resume.html">Resume</a>
+                    <a href="./html/my_fun_facts.html">Fun Facts</a>
+                </div>
+                <div class="reach-out">
+                    <h4>Reach Out</h4>
+                    <ul>
+                        <li>Email: <a href="mailto:mgardea@oakland.edu">mgardea@oakland.edu</a></li>
+                        <li>Instagram: <a href="https://www.instagram.com/manuellg/">@manuellg</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
+

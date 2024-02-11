@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Courier New", Courier, monospace;
+    --bg-primary: #dad7cd;
+    --bg-secondary: #a3b18a;
+    --font-color-primary: #588157;
+    --font-color-secondary: #3a5a40;
+    --backup-color: #344e41;
+}
+
+body {
+    height: 100vh;
+    background: var(--bg-primary);
+}
+
+/*Style Navbar and header*/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 50px;
+}
+
+.navbar h2 {
+    display: flex;
+    align-items: center;
+}
+
+.navbar h2 img {
+    width: 150px; /* Adjust the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add some space between the logo and text (if needed) */
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: var(--font-color-secondary);
+    font-size: 16px;
+    margin-right: 25px;
+    transition: color 0.3 ease;
+}
+
+.navbar ul li:hover a {
+    color: var(--font-color-primary);
+}
+
+.navbar ul li:last-child a {
+    margin: 0;
+}
+
+.lets-btn {
+    background: var(--backup-color);
+    color: var(--font-color-primary);
+    padding: 6px 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 80px;
+    transition: background 0.3s ease;
+}
+
+.lets-btn:hover{
+    background: var(--font-color-secondary);
+    color: var(--bg-primary);
+}
+
+/* Hero Section Style */
+.main {
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main h1 {
+    font-size: 44px;
+    color: var(--font-color-primary);
+    font-weight: 600;
+}
+
+.main p.quote{
+    font-size: 32px;
+    font-weight: 100;
+    color: var(--font-color-primary);
+    margin-top: 20px;
+}
+
+.main img{
+    width: 300px;
+    height: 250px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+.section-seperator-title {
+    margin: 50px 50px 30px;
+    padding: 10px 20px;
+    background: var(--font-color-primary);
+    display: inline-block;
+    color: var(--bg-primary);
+    border-radius: 12px;
+    font-size: 22px;
+}
+
+/* about me style */
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    padding: 0 50px;
+}
+
+.about-me .info h3 {
+    color: var(--backup-color);
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about-me .info p{
+    color: var(--font-color-primary);
+    font-size: 14px;
+}
+
+.about-me img {
+    width: 300px;
+}
+
+.progress-bar {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.progress-bar p {
+    margin: 50px 50px 30px;
+    padding: 10px 20px;
+    background: var(--font-color-primary);
+    display: inline-block;
+    color: var(--bg-primary);
+    border-radius: 12px;
+    font-size: 22px;
+}
+
+.progress-bar progress {
+    background: var(--bg-secondary);
+}
+
+footer {
+    background-color: var(--bg-secondary);
+    padding: 20px;
+    position: relative;
+    background: var(--bg-secondary);
+    margin-top: 100px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cols {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-cols, .reach-out {
+    flex: 1;
+}
+
+.link-cols h4, .reach-out h4 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.link-cols a, .reach-out a {
+    color: var(--bg-primary);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.link-cols a:hover, .reach-out a:hover {
+    color: #000;
+}
+
+.reach-out ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.reach-out ul li {
+    margin-bottom: 5px;
+}
+
+.reach-out ul li a {
+    color: var(--bg-primary);
+    text-decoration: none;
+}
+
+/* Resume Styling*/
+.resume h1{
+    text-align: center;
+}
+
+section {
+    width: 80%; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+.contact-info, .objective, .professional-experience, .educational-experiences, .interests-hobbies {
+    background-color: var(--bg-secondary);
+    padding: 20px; 
+    margin-bottom: 20px; 
+    border-radius: 8px; 
+}
+
+.contact-info, .objective, .professional-experience, .educational-experiences, .interests-hobbies h2{
+    text-align: center;
+}
+
+.interests-hobbies p {
+    text-align: center;
+}
+
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+table, th, td {
+    border: 1px solid #ddd; 
+    padding: 8px; 
+}
+
+th {
+    
+}
+
+/* style fun facts */
+
+
+main {
+    width: 80%; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+.intro h1{
+    text-align: center;
+}
+
+/* Style the sections */
+.intro, .facts {
+    background-color: #f3f3f3; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    border-radius: 8px; 
+}
+
+.fact-item {
+    background-color: #e9e9e9; 
+    padding: 20px; 
+    margin-bottom: 20px;
+    border-radius: 8px; 
+}
+
+
+.fact-content {
+    text-align: center; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+}

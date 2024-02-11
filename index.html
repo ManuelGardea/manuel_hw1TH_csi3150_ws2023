@@ -5,44 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manuel's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="/assets/img/browser_5202957.png">
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
+
 <body>
-    <center>
     <header>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="./html/my_resume.html">Resume</a> |
-            <a href="./html/my_fun_facts.html">Fun Facts</a>
-            <h1>Manuel's Portfolio</h1>
-        </nav>
+        <div class="navbar">
+            <h2><img src="./assets/img/—Pngtree—brain bulb icon symbol design_5199221.png" alt="This is an image of logo"></h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./html/my_resume.html">Resume</a></li> 
+                    <li><a href="./html/my_fun_facts.html">Fun Facts</a></li>
+                </ul>
+            </nav>
+            <button class="lets-btn">Lets Connect</button>
+        </div>
     </header>
 
-    <section>
-            <img src="./assets/img/IMG_9957.JPG" width="200" height="120" alt="This is an image of Manuel">
-        <blockquote>
-            <p>“Knowing yourself is the beginning of all wisdom.”
-              ― Aristotle</p>
-        </blockquote>
-        <p>
-            My name is Manuel Gardea I am from Jalisco Mexico. I am a third year student at Oakland University, I am studying Information technology and want to study and learn more about cybersecurity.
-            <br><br>
-            To know more about me, check out my <a href="./html/my_resume.html">resume page</a> and my <a href="./html/my_fun_facts.html">Fun facts page</a>.
-        </p>
-        <p>Progress: 83 out of 128 credits</p>
-        <progress value="83" max="128"></progress>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="main">
+            <h1>Manuel's Portfolio Website</h1>
+            <p class="quote">“Knowing yourself is the beginning of all wisdom.”  ― Aristotle</p>
+            <img src="./assets/img/—Pngtree—brain bulb icon symbol design_5199221.png" alt="This is an image of logo">
+        </div>
     </section>
-  </br>
-</br>
-</br>
-</br>
-</center>
-    <hr>
+    <!-- End of Hero Section -->
+
+    <!-- Section Separator -->
+    <section class="section-seperator">
+        <h2 class="section-seperator-title">A Little Bit About Me...</h2>
+
+        <div class="about-me">
+            <img src="./assets/img/unnamed.jpg" alt="image of me">
+            <div class="info">
+                <h3>Who Am I?</h3>
+                <p>My name is Manuel Gardea. I am a third year student at Oakland University, I am studying Information technology and want to study and learn more about cybersecurity. To know more about me, check out my <a href="./html/my_resume.html">resume page</a> and my <a href="./html/my_fun_facts.html">Fun facts page</a>.</p>
+            </div>
+        </div>
+
+        <div class="progress-bar">
+            <p>Progress for IT Degree: 83 out of 128 credits</p>
+            <progress value="83" max="128"></progress>
+      </div>
+    </section>
+
     <footer>
-        &copy; 2024 Manuels Portfolio. All rights reserved. <br>
-        Email: <a href="mailto:mgardea@oakland.edu">mgardea@oakland.edu</a> <br>
-        Social Media: Instagram: @manuellg
+        <div class="footer-content">
+            <div class="cols">
+                <div class="link-cols">
+                    <h4>Useful Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="./html/my_resume.html">Resume</a>
+                    <a href="./html/my_fun_facts.html">Fun Facts</a>
+                </div>
+                <div class="reach-out">
+                    <h4>Reach Out</h4>
+                    <ul>
+                        <li>Email: <a href="mailto:mgardea@oakland.edu">mgardea@oakland.edu</a></li>
+                        <li>Instagram: <a href="https://www.instagram.com/manuellg/">@manuellg</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
 
 </body>
 </html>
+
 
